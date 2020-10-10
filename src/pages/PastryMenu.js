@@ -45,7 +45,6 @@ function PastryMenu() {
         setItemType(e.target.value);
     };
     return (
-        // <div className="Menu">
         <Flex direction="column" p="1rem" alignItems="center">
             <Text
                 as="h2"

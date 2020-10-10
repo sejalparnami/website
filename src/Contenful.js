@@ -10,9 +10,4 @@ const client = createClient({
 
 const getData = () => client.getEntries().then((response) => response.items);
 
-// const getCategory = () =>
-//     client
-//         .getContentType("entremets")
-//         .then((response) => console.log(response.items));
-
 export { getData };

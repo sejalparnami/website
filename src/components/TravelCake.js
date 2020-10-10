@@ -88,8 +88,6 @@ function TravelCake(props) {
                         ₹{getPrice()}
                     </Text>
                 </Flex>
-                {/* <p>{props.description}</p> */}
-                {/* <Box> */}
                 <form onSubmit={addToCart}>
                     <Flex justifyContent="space-between" direction="row">
                         <NumberInput
@@ -118,7 +116,6 @@ function TravelCake(props) {
                         </Button>
                     </Flex>
                 </form>
-                {/* </Box> */}
             </Flex>
         </Flex>
     );

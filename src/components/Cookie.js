@@ -52,18 +52,6 @@ function Cookie(props) {
         };
 
         addItem(itemToAdd);
-
-        // setCart([
-        //     ...cart,
-        //     {
-        //         id: uuidv4(),
-        //         name: props.name,
-        //         size: e.target.value,
-        //         number: formState,
-        //         priceOfOne: price,
-        //         addOn: "Nthn",
-        //     },
-        // ]);
     };
     return (
         <Flex
@@ -101,8 +89,6 @@ function Cookie(props) {
                         ₹{getPrice()}
                     </Text>
                 </Flex>
-                {/* <p>{props.description}</p> */}
-                {/* <Box> */}
                 <form onSubmit={addToCart}>
                     <Flex justifyContent="space-between" direction="row">
                         <NumberInput
@@ -131,7 +117,6 @@ function Cookie(props) {
                         </Button>
                     </Flex>
                 </form>
-                {/* </Box> */}
             </Flex>
         </Flex>
     );

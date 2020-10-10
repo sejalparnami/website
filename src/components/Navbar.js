@@ -26,16 +26,6 @@ function Navbar() {
         >
             <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
                 <Icon name="hamburgerMenu" color="white" size="28px"></Icon>
-
-                {/* <svg
-                    fill="white"
-                    width="12px"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg> */}
             </Box>
 
             <Flex align="center" mr={{ md: "5rem" }}>
@@ -82,24 +72,6 @@ function Navbar() {
                     <Link to="/contactUs">Contact US</Link>
                 </MenuItems>
             </Box>
-
-            {/* <Box align="center">
-                <Flex>
-                    <Link to="/cart">
-                        <svg
-                            fill="white"
-                            width="12px"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
-                        <Text as="span">Cart</Text>
-                    </Link>
-                </Flex>
-            </Box> */}
-
             <Box>
                 <Link to="/cart">
                     <Button leftIcon="cart" bg="transparent">
