@@ -31,6 +31,7 @@ function Cart() {
     let sendCart = [];
     sendCart = cart.map((item) => {
         let text = `Name: ${item.name} 
+        Category: ${item.type}
         Price of one item: ${item.priceOfOne}
         Number of item: ${item.number}
         Add ons: ${item.addOn}`;
