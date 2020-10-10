@@ -133,8 +133,7 @@ function PastryMenu() {
                                 category="Entremet"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "cheesecakes" &&
                         itemType === "Cheesecakes"
                     ) {
@@ -149,8 +148,7 @@ function PastryMenu() {
                                 category="Cheesecake"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id ===
                             "eclairsAndProfiteroles" &&
                         itemType === "Eclairs and Profiteroles"
@@ -164,8 +162,7 @@ function PastryMenu() {
                                 category="Eclair and Profiteroles"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "cookies" &&
                         itemType === "Cookies"
                     ) {
@@ -177,8 +174,7 @@ function PastryMenu() {
                                 category="Cookies"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "travelCakes" &&
                         itemType === "Travel Cakes"
                     ) {
@@ -191,8 +187,7 @@ function PastryMenu() {
                                 category="Travel Cake"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "brownies" &&
                         itemType === "Brownies"
                     ) {
@@ -205,8 +200,7 @@ function PastryMenu() {
                                 category="Brownies"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "tartsAndPies" &&
                         itemType === "Tarts and Pies"
                     ) {
@@ -220,8 +214,7 @@ function PastryMenu() {
                                 category="Tarts and Pies"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "granola" &&
                         itemType === "Granola"
                     ) {
@@ -235,8 +228,7 @@ function PastryMenu() {
                                 category="Granola"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "chocolate" &&
                         itemType === "Chocolates"
                     ) {
@@ -249,8 +241,7 @@ function PastryMenu() {
                                 category="Chocolate"
                             />
                         );
-                    }
-                    if (
+                    } else if (
                         item.sys.contentType.sys.id === "iceCreams" &&
                         itemType === "Icecreams and Sorbets"
                     ) {
@@ -264,7 +255,7 @@ function PastryMenu() {
                                 category="Ice Creams and Sorbets"
                             />
                         );
-                    } else return <></>;
+                    } else return null;
                 })}
             </SimpleGrid>
         </Flex>
