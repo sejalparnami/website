@@ -26,16 +26,15 @@ function PastryMenu() {
     const [data2, setData2] = useState([]);
     // const [iceCream. setIceCream] = useState([])
 
-    const promise = getData();
-
     useEffect(() => {
+        const promise = getData();
+
         promise.then((data) => {
             // console.log(data);
             // console.log("hello");
             setData2(data);
             // setIceCream(data.map((item) => {}))
         });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const [itemType, setItemType] = useState("Entremets");

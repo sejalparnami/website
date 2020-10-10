@@ -365,7 +365,7 @@ function Chocolate(props) {
                                     </Radio>
                                 );
                             } else {
-                                return <Text key={index}> </Text>;
+                                return null;
                             }
                         })}
                     </RadioGroup>
