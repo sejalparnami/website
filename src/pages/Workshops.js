@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Flex, Text, Image } from "@chakra-ui/core";
+import { Flex, Text } from "@chakra-ui/core";
 
 function Workshops() {
     return (

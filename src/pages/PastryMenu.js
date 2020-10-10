@@ -35,6 +35,7 @@ function PastryMenu() {
             setData2(data);
             // setIceCream(data.map((item) => {}))
         });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const [itemType, setItemType] = useState("Entremets");
@@ -263,7 +264,7 @@ function PastryMenu() {
                                 category="Ice Creams and Sorbets"
                             />
                         );
-                    }
+                    } else return <></>;
                 })}
             </SimpleGrid>
         </Flex>
