@@ -4,8 +4,6 @@ import { CartContext } from "../contexts/cart.context";
 import React, { useContext } from "react";
 
 function CartItem(props) {
-    // console.log(props);
-
     const remove = () => {
         removeItem(props.id);
     };

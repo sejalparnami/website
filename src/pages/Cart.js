@@ -49,8 +49,6 @@ function Cart() {
         sendCart.join("\n")
     )}                     
               \nTotal:${total}`;
-    // let message = `${finalMessage}`;
-    // const [total, setTotal] = useState(0);
     return (
         <Flex
             direction="column"

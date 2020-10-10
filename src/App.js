@@ -13,29 +13,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { CartProvider } from "./contexts/cart.context";
 
-// import "./App.css";
-
 function App() {
-    // const initialCart = [
-    //     {
-    //         id: 1,
-    //         name: "Strawberry Cheesecake",
-    //         size: "1kg",
-    //         number: 3,
-    //         priceOfOne: 100,
-
-    //     },
-    //     {
-    //         id: 2,
-    //         name: "Blueberry Cheesecake",
-    //         size: "3kg",
-    //         number: 1,
-    //         priceOfOne: 400,
-
-    //     },
-    // ];
-    // const [cart, setCart] = useState(initialCart);
-
     return (
         <div className="App">
             <Router>
@@ -62,12 +40,6 @@ function App() {
                                     <ContactUs />
                                 </Route>
                             </Switch>
-
-                            {/* <Cookie
-                        key={1}
-                        name="Cookies"
-                        image="https://picsum.photos/340/200"
-                    /> */}
                         </Box>
                     </CartProvider>
                 </ThemeProvider>

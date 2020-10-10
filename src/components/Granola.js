@@ -83,18 +83,6 @@ function Granola(props) {
         };
 
         addItem(itemToAdd);
-
-        // setCart([
-        //     ...cart,
-        //     {
-        //         id: uuidv4(),
-        //         name: props.name,
-        //         size: e.target.value,
-        //         number: 1,
-        //         priceOfOne: price,
-        //         addOn: "N",
-        //     },
-        // ]);
     };
     return (
         <Flex
