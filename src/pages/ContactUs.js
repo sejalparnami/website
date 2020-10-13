@@ -50,7 +50,7 @@ function ContactUs() {
                     fontSize="1rem"
                     textDecoration="underline"
                 >
-                    987896
+                    {phoneNumber}
                 </Text>
             </Text>
             <Text

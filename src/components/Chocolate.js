@@ -99,7 +99,7 @@ function Chocolate(props) {
                             Darker
                         </Radio>
                     </RadioGroup>
-                    <Text fontSize="14px">Flavour 21</Text>
+                    <Text fontSize="14px">Flavour 1</Text>
                     <RadioGroup
                         onChange={handleChange}
                         name="addOn1"
@@ -130,19 +130,15 @@ function Chocolate(props) {
                         // mt="0.25rem"
                     >
                         {props.flavours.map((flavour, index) => {
-                            if (!(flavour === formState.addOn1)) {
-                                return (
-                                    <Radio
-                                        key={index}
-                                        variantColor="brandLight"
-                                        value={flavour}
-                                    >
-                                        {flavour}
-                                    </Radio>
-                                );
-                            } else {
-                                return null;
-                            }
+                            return (
+                                <Radio
+                                    key={index}
+                                    variantColor="brandLight"
+                                    value={flavour}
+                                >
+                                    {flavour}
+                                </Radio>
+                            );
                         })}
                     </RadioGroup>
                     <Flex justifyContent="space-between" direction="row">

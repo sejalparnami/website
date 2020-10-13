@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text, Button, Icon } from "@chakra-ui/core";
+import { Box, Flex, Text, Button, Icon, IconButton } from "@chakra-ui/core";
 import { Link } from "react-router-dom";
 
 const MenuItems = ({ children }) => (
@@ -74,9 +74,18 @@ function Navbar() {
             </Box>
             <Box>
                 <Link to="/cart">
-                    <Button leftIcon="cart" bg="transparent">
-                        Cart
-                    </Button>
+                    {show ? (
+                        <Button leftIcon="cart" bg="transparent">
+                            Cart
+                        </Button>
+                    ) : (
+                        <IconButton
+                            aria-label="Cart"
+                            icon="cart"
+                            variantColor="brandDark"
+                            fontSize="26px"
+                        />
+                    )}
                 </Link>
             </Box>
         </Flex>
