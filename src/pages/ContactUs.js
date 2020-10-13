@@ -13,7 +13,7 @@ function ContactUs() {
                 fontSize="1.5rem"
                 mb="1rem"
             >
-                CONTACT US
+                CONTACT Us
             </Text>
             <Text
                 as="p"
